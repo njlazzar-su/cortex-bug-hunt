@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .terminal { fill: #1e1e1e; }
+      .titlebar { fill: #323233; }
+      .text { font-family: 'JetBrains Mono', monospace; }
+      .white { fill: #ffffff; }
+      .red { fill: #f44336; }
+      .yellow { fill: #ffeb3b; }
+      .green { fill: #4caf50; }
+      .blue { fill: #5dade2; }
+      .gray { fill: #666666; }
+      .bold { font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="600" class="terminal" rx="6"/>
+  <rect x="0" y="0" width="1000" height="35" class="titlebar" rx="6"/>
+
+  <circle cx="20" cy="17.5" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="17.5" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="17.5" r="6" fill="#27c93f"/>
+
+  <text x="500" y="22" class="text white bold" text-anchor="middle" font-size="12">npm run test -- src/components/git/__tests__/BlameView.test.tsx</text>
+
+  <g transform="translate(15, 60)">
+    <text class="text green" font-size="13" y="0">› cortex-desktop@0.1.0 test</text>
+    <text class="text white" font-size="13" y="18">› vitest run src/components/git/__tests__/BlameView.test.tsx</text>
+    <text class="text white" font-size="13" y="45"></text>
+    
+    <text class="text blue bold" font-size="13" y="70"> RUN  v4.0.18  /root/.openclaw/workspace/cortex-ide</text>
+    <text class="text white" font-size="13" y="100"></text>
+
+    <text class="text red" font-size="12" y="125">stderr | src/components/git/__tests__/BlameView.test.tsx &gt; BlameView &gt; Rendering &gt; should render without crashing</text>
+    <text class="text white" font-size="12" y="150">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</text>
+    <text class="text yellow" font-size="11" y="170">    at fetchBlame (/root/.openclaw/workspace/cortex-ide/src/components/git/BlameView.tsx:50:44)</text>
+    <text class="text yellow" font-size="11" y="190">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</text>
+
+    <text class="text red" font-size="12" y="220">stderr | src/components/git/__tests__/BlameView.test.tsx &gt; BlameView &gt; Rendering &gt; should accept filePath prop</text>
+    <text class="text white" font-size="12" y="245">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</text>
+    <text class="text yellow" font-size="11" y="265">    at fetchBlame (/root/.openclaw/workspace/cortex-ide/src/components/git/BlameView.tsx:50:44)</text>
+    <text class="text yellow" font-size="11" y="285">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</text>
+
+    <text class="text red" font-size="12" y="315">stderr | src/components/git/__tests__/BlameView.test.tsx &gt; BlameView &gt; Rendering &gt; should accept onNavigateToCommit prop</text>
+    <text class="text white" font-size="12" y="340">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</text>
+    <text class="text yellow" font-size="11" y="360">    at fetchBlame (/root/.openclaw/workspace/cortex-ide/src/components/git/BlameView.tsx:50:44)</text>
+
+    <text class="text white" font-size="13" y="400"></text>
+    <text class="text green bold" font-size="14" y="425">✓ src/components/git/__tests__/BlameView.test.tsx (6 tests) 136ms</text>
+
+    <line x1="0" y1="445" x2="970" y2="445" stroke="#323233" stroke-width="2"/>
+    
+    <text class="text white font-size="12" y="470">Test Files  1 passed (1)</text>
+    <text class="text white" font-size="12" y="490">Tests       6 passed (6)</text>
+    <text class="text gray font-size="11" y="510">Start at   20:50:05</text>
+    <text class="text gray font-size="11" y="528">Duration   2.62s (transform 923ms, setup 235ms, import 782ms, tests 136ms)</text>
+  </g>
+</svg>
