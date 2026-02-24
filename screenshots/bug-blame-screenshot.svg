@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .terminal { fill: #1e1e1e; }
+      .titlebar { fill: #323233; }
+      .text { font-family: 'JetBrains Mono', monospace; }
+      .white { fill: #ffffff; }
+      .red { fill: #f44336; }
+      .yellow { fill: #ffeb3b; }
+      .green { fill: #4caf50; }
+      .bold { font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="500" class="terminal" rx="6"/>
+  <rect x="0" y="0" width="900" height="35" class="titlebar" rx="6"/>
+
+  <circle cx="20" cy="17.5" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="17.5" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="17.5" r="6" fill="#27c93f"/>
+
+  <text x="450" y="22" class="text white bold" text-anchor="middle" font-size="12">vitest error output</text>
+
+  <g transform="translate(15, 60)">
+    <text class="text white bold" font-size="13" y="0">stderr | src/components/git/__tests__/BlameView.test.tsx</text>
+    <text class="text white" font-size="13" y="20">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</text>
+    <text class="text yellow" font-size="12" y="40">    at fetchBlame (.../cortex-ide/src/components/git/BlameView.tsx:50:44)</text>
+    <text class="text yellow" font-size="11" y="60">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</text>
+
+    <text class="text green" font-size="13" y="95">✓ BlameView.test.tsx (6 tests) 97ms</text>
+
+    <line x1="0" y1="115" x2="870" y2="115" stroke="#323233" stroke-width="2"/>
+
+    <text class="text red bold" font-size="14" y="145">BUG #1 FOUND: BlameView.tsx:50</text>
+    <text class="text white" font-size="12" y="170">Component: BlameView</text>
+    <text class="text white" font-size="12" y="190">File: src/components/git/BlameView.tsx</text>
+    <text class="text white" font-size="12" y="210">Line: 50</text>
+
+    <text class="text white" font-size="12" y="245">Description:</text>
+    <text class="text yellow" font-size="11" y="265">gitBlame() API can return undefined, but code calls .map() without</text>
+    <text class="text yellow" font-size="11" y="280">checking if the result exists. This causes runtime crash.</text>
+
+    <text class="text white" font-size="12" y="315">Fix:</text>
+    <text class="text green" font-size="11" y="340">const lines = entries?.map((entry) => ({...</text>
+    <text class="text green" font-size="11" y="360">// or</text>
+    <text class="text green" font-size="11" y="380">if (!entries) return;</text>
+
+    <text class="text white" font-size="10" y="420" x="870" text-anchor="end">Runs in: test environment</text>
+  </g>
+</svg>
