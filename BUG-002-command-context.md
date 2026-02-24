@@ -39,7 +39,7 @@ for (const cmd of extensionCommands) { // ❌ CRASH
 **Result**: `TypeError: extensionCommands is not iterable`
 
 ### Screenshot
-![CommandContext Bug Screenshot](./vitest-command-output.html)
+![CommandContext Bug Screenshot](./vitest-command-output.png)
 
 ## Steps to Reproduce
 

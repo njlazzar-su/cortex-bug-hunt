@@ -36,7 +36,7 @@ const lines = entries.map((entry) => ({ // ❌ CRASH
 **Result**: `TypeError: Cannot read properties of undefined (reading 'map')`
 
 ### Screenshot
-![BlameView Bug Screenshot](./vitest-blame-output.html)
+![BlameView Bug Screenshot](./vitest-blame-output.png)
 
 ## Steps to Reproduce
 
