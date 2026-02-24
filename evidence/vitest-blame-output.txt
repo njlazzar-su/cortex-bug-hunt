@@ -1,0 +1,39 @@
+
+> cortex-desktop@0.1.0 test
+> vitest run src/components/git/__tests__/BlameView.test.tsx
+
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90m/root/.openclaw/workspace/cortex-ide[39m
+
+[90mstderr[2m | src/components/git/__tests__/BlameView.test.tsx[2m > [22m[2mBlameView[2m > [22m[2mRendering[2m > [22m[2mshould render without crashing
+[22m[39mFailed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')
+    at fetchBlame [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/components/git/BlameView.tsx:50:44[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstderr[2m | src/components/git/__tests__/BlameView.test.tsx[2m > [22m[2mBlameView[2m > [22m[2mRendering[2m > [22m[2mshould accept filePath prop
+[22m[39mFailed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')
+    at fetchBlame [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/components/git/BlameView.tsx:50:44[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstderr[2m | src/components/git/__tests__/BlameView.test.tsx[2m > [22m[2mBlameView[2m > [22m[2mRendering[2m > [22m[2mshould accept onNavigateToCommit prop
+[22m[39mFailed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')
+    at fetchBlame [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/components/git/BlameView.tsx:50:44[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstderr[2m | src/components/git/__tests__/BlameView.test.tsx[2m > [22m[2mBlameView[2m > [22m[2mRendering[2m > [22m[2mshould display Git Blame header
+[22m[39mFailed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')
+    at fetchBlame [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/components/git/BlameView.tsx:50:44[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstderr[2m | src/components/git/__tests__/BlameView.test.tsx[2m > [22m[2mBlameView[2m > [22m[2mRendering[2m > [22m[2mshould display the file path
+[22m[39mFailed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')
+    at fetchBlame [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/components/git/BlameView.tsx:50:44[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+ [32m✓[39m src/components/git/__tests__/BlameView.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 136[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 20:50:05
+[2m   Duration [22m 2.62s[2m (transform 923ms, setup 235ms, import 782ms, tests 136ms, environment 1.17s)[22m
+

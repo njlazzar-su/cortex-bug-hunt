@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitest Error Output - BlameView Bug</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0d1117;
+      font-family: 'Courier New', monospace;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #58a6ff;
+      font-size: 18px;
+    }
+    pre {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      color: #c9d1d9;
+      white-space: pre;
+      line-height: 1.5;
+    }
+    .green { color: #4caf50; }
+    .red { color: #f44336; }
+    .yellow { color: #ffeb3b; }
+    .white { color: #ffffff; }
+    .blue { color: #5dade2; }
+    .gray { color: #666666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vitest Output - BlameView Bug</h1>
+    <pre>
+<span class="green">› cortex-desktop@0.1.0 test</span>
+<span class="white">› vitest run src/components/git/__tests__/BlameView.test.tsx</span>
+
+<span class="blue"> RUN  v4.0.18  /root/.openclaw/workspace/cortex-ide</span>
+
+<span class="red">stderr | src/components/git/__tests__/BlameView.test.tsx > BlameView > Rendering > should render without crashing</span>
+<span class="white">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</span>
+<span class="yellow">    at fetchBlame (/root/.openclaw/workspace/cortex-ide/src/components/git/BlameView.tsx:50:44)</span>
+<span class="yellow">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</span>
+
+<span class="red">stderr | src/components/git/__tests__/BlameView.test.tsx > BlameView > Rendering > should accept filePath prop</span>
+<span class="white">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</span>
+<span class="yellow">    at fetchBlame (/root/.openclaw/workspace/cortex-ide/src/components/git/BlameView.tsx:50:44)</span>
+<span class="yellow">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</span>
+
+<span class="red">stderr | src/components/git/__tests__/BlameView.test.tsx > BlameView > Rendering > should accept onNavigateToCommit prop</span>
+<span class="white">Failed to fetch blame: TypeError: Cannot read properties of undefined (reading 'map')</span>
+<span class="yellow">    at fetchBlame (/root/.openclaw/workspace/cortex-ide/src/components/git/BlameView.tsx:50:44)</span>
+<span class="yellow">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</span>
+
+<span class="green">✓ src/components/git/__tests__/BlameView.test.tsx (6 tests) 136ms</span>
+
+<span class="white">Test Files  1 passed (1)</span>
+<span class="white">Tests       6 passed (6)</span>
+<span class="gray">Start at   20:50:05</span>
+<span class="gray">Duration   2.62s (transform 923ms, setup 235ms, import 782ms, tests 136ms)</span>
+    </pre>
+    <p style="color: #8b949e; font-size: 12px; margin-top: 10px;">
+      Command: npm run test -- src/components/git/__tests__/BlameView.test.tsx
+    </p>
+  </div>
+</body>
+</html>

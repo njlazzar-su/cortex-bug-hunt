@@ -1,0 +1,78 @@
+
+> cortex-desktop@0.1.0 test
+> vitest run src/components/__tests__/KeyboardShortcutsEditor.test.tsx
+
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90m/root/.openclaw/workspace/cortex-ide[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould not render when closed
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould render when keyboard-shortcuts:show event is dispatched
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould close when Escape key is pressed
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould display search input
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould display category sections
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould close when clicking overlay
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould filter commands based on search query
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould toggle category expansion when clicked
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould display filter mode dropdown
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould display close button with title
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+[90mstdout[2m | src/components/__tests__/KeyboardShortcutsEditor.test.tsx[2m > [22m[2mKeyboardShortcutsEditor[2m > [22m[2mshould display keyboard shortcut hints in footer
+[22m[39m[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable
+    at loadExtensionCommands [90m(/root/.openclaw/workspace/cortex-ide/[39msrc/context/CommandContext.tsx:103:25[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+
+ [32m✓[39m src/components/__tests__/KeyboardShortcutsEditor.test.tsx [2m([22m[2m11 tests[22m[2m)[22m[33m 3957[2mms[22m[39m
+     [33m[2m✓[22m[39m should render when keyboard-shortcuts:show event is dispatched [33m 632[2mms[22m[39m
+     [33m[2m✓[22m[39m should close when Escape key is pressed [33m 436[2mms[22m[39m
+     [33m[2m✓[22m[39m should display search input [33m 365[2mms[22m[39m
+     [33m[2m✓[22m[39m should display category sections [33m 345[2mms[22m[39m
+     [33m[2m✓[22m[39m should close when clicking overlay [33m 359[2mms[22m[39m
+     [33m[2m✓[22m[39m should filter commands based on search query [33m 332[2mms[22m[39m
+     [33m[2m✓[22m[39m should toggle category expansion when clicked [33m 330[2mms[22m[39m
+     [33m[2m✓[22m[39m should display filter mode dropdown [33m 407[2mms[22m[39m
+     [33m[2m✓[22m[39m should display close button with title [33m 359[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m   Start at [22m 20:50:26
+[2m   Duration [22m 10.84s[2m (transform 5.04s, setup 236ms, import 5.29s, tests 3.96s, environment 1.08s)[22m
+

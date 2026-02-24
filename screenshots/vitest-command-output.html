@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitest Error Output - CommandContext Bug</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0d1117;
+      font-family: 'Courier New', monospace;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #58a6ff;
+      font-size: 18px;
+    }
+    pre {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+      color: #c9d1d9;
+      white-space: pre;
+      line-height: 1.5;
+    }
+    .green { color: #4caf50; }
+    .red { color: #f44336; }
+    .yellow { color: #ffeb3b; }
+    .white { color: #ffffff; }
+    .blue { color: #5dade2; }
+    .gray { color: #666666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vitest Output - CommandContext Bug</h1>
+    <pre>
+<span class="green">› cortex-desktop@0.1.0 test</span>
+<span class="white">› vitest run src/components/__tests__/KeyboardShortcutsEditor.test.tsx</span>
+
+<span class="blue"> RUN  v4.0.18  /root/.openclaw/workspace/cortex-ide</span>
+<span class="green">✓ src/components/cortex/primitives/__tests__/CortexButton.test.tsx (36 tests) 1409ms</span>
+<span class="green">      ✓ renders with default props 355ms</span>
+
+<span class="yellow">stdout | src/components/__tests__/KeyboardShortcutsEditor.test.tsx > KeyboardShortcutsEditor > should not render when closed</span>
+<span class="white">[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable</span>
+<span class="yellow">    at loadExtensionCommands (/root/.openclaw/workspace/cortex-ide/src/context/CommandContext.tsx:103:25)</span>
+<span class="yellow">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</span>
+
+<span class="yellow">stdout | src/components/__tests__/KeyboardShortcutsEditor.test.tsx > KeyboardShortcutsEditor > should display search input</span>
+<span class="white">[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable</span>
+<span class="yellow">    at loadExtensionCommands (/root/.openclaw/workspace/cortex-ide/src/context/CommandContext.tsx:103:25)</span>
+<span class="yellow">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</span>
+
+<span class="yellow">stdout | src/components/__tests__/KeyboardShortcutsEditor.test.tsx > KeyboardShortcutsEditor > should close when clicking overlay</span>
+<span class="white">[Command] Extension commands unavailable: TypeError: extensionCommands is not iterable</span>
+<span class="yellow">    at loadExtensionCommands (/root/.openclaw/workspace/cortex-ide/src/context/CommandContext.tsx:103:25)</span>
+<span class="yellow">    at processTicksAndRejections (node:internal/process/task_queues:105:5)</span>
+
+<span class="green">✓ src/components/__tests__/KeyboardShortcutsEditor.test.tsx (11 tests) 3957ms</span>
+<span class="green">      ✓ should render when keyboard-shortcuts:show event is dispatched 632ms</span>
+<span class="green">      ✓ should close when Escape key is pressed 436ms</span>
+<span class="green">      ✓ should display search input 365ms</span>
+<span class="green">      ✓ should display category sections 345ms</span>
+<span class="green">      ✓ should toggle category expansion when clicked 330ms</span>
+
+<span class="white">Test Files  1 passed (1)</span>
+<span class="white">Tests      11 passed (11)</span>
+<span class="gray">Start at   20:50:26</span>
+<span class="gray">Duration   10.84s (transform 5.04s, setup 236ms, import 5.29s, tests 3.96s)</span>
+    </pre>
+    <p style="color: #8b949e; font-size: 12px; margin-top: 10px;">
+      Command: npm run test -- src/components/__tests__/KeyboardShortcutsEditor.test.tsx
+    </p>
+  </div>
+</body>
+</html>
