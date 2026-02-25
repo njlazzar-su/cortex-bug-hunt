@@ -1,4 +1,4 @@
-# [BUG] [v0.0.7] moveWithUndo lacks collision detection while copyWithUndo/duplicateWithUndo auto-rename
+# [BUG] [alpha] moveWithUndo lacks collision detection while copyWithUndo/duplicateWithUndo auto-rename
 
 ## Project
 ide
@@ -11,7 +11,7 @@ The `moveWithUndo` function does NOT check for path collisions before moving, bu
 - Move a file to an existing destination → Silent failure or overwrite (incorrect)
 
 ## Screenshot
-![Collision Asymmetry](./screenshots/BUG-003-collision-asymmetry.png)
+![Collision Asymmetry](https://raw.githubusercontent.com/njlazzar-su/cortex-bug-hunt/main/screenshots/BUG-003-collision-asymmetry.png)
 
 ## Evidence
 
